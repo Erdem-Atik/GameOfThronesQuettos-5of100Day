@@ -13,7 +13,6 @@ const getQuotes = async function () {
 btn.addEventListener("click", function (e) {
   e.preventDefault();
   getQuotes().then((sm) => {
-    quotes.value = sm;
     quotes.innerHTML = sm;
   });
 });
